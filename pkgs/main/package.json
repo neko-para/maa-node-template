@@ -1,0 +1,6 @@
+{
+  "name": "maa-node-template-main",
+  "dependencies": {
+    "@nekosu/maa-node": "^1.3.2"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../pkgs/main/src/main.ts"],
+  "sourcesContent": ["const maa = require('@nekosu/maa-node')\n\nconsole.log(maa.version())\n"],
+  "mappings": "AAAA,IAAMA,EAAM,QAAQ,kBAAkB,EAEtC,QAAQ,IAAIA,EAAI,QAAQ,CAAC",
+  "names": ["maa"]
+}
