@@ -14,6 +14,7 @@
     "@nekosu/maa-node": "^1.3.2"
   },
   "scripts": {
+    "dev": "node scripts/watch.mjs",
     "build": "node scripts/build.mjs",
     "package": "electron-forge package"
   }
