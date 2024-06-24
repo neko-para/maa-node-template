@@ -58,14 +58,10 @@ async function watchMain(server, preloadOk) {
               await preloadOk
               preloadOk = null
             }
-            electronProcess = spawn(
-              electron,
-              ['.', '--inspect', '--remote-debugging-port=9876'],
-              {
-                stdio: 'inherit',
-                env
-              }
-            )
+            electronProcess = spawn(electron, ['.', '--inspect', '--remote-debugging-port=9876'], {
+              stdio: 'inherit',
+              env
+            })
           })
         }
       }
@@ -122,3 +118,7 @@ const server = await createServer({
 await server.listen()
 const preloadOk = watchPreload(server)
 await watchMain(server, preloadOk)
+
+process.on('SIGINT', () => {
+  process.exit(0)
+})

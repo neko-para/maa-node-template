@@ -1,5 +1,6 @@
 {
   "name": "maa-node-template-preload",
+  "type": "module",
   "devDependencies": {
     "@vue/tsconfig": "^0.5.1",
     "typescript": "^5.5.2",
